@@ -1,0 +1,878 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/navigation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mothbar"
+        android:gravity="center" >
+
+        <ImageButton
+            android:id="@+id/previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/btn_prev_btm_select" />
+
+        <Button
+            android:id="@+id/up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:gravity="center"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/txt_1"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/btn_nxt_btm_select" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/events"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="TODO: Items" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/days"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:visibility="visible" >
+
+        <TableRow>
+
+            <RelativeLayout style="@style/RltvLayout_Week" >
+
+                <TextView
+                    style="@style/DayNames"
+                    android:text="Sun" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/RltvLayout_Week" >
+
+                <TextView
+                    style="@style/DayNames"
+                    android:text="Mon" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/RltvLayout_Week" >
+
+                <TextView
+                    style="@style/DayNames"
+                    android:text="Tue" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/RltvLayout_Week" >
+
+                <TextView
+                    style="@style/DayNames"
+                    android:text="Wen" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/RltvLayout_Week" >
+
+                <TextView
+                    style="@style/DayNames"
+                    android:text="Thu" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/RltvLayout_Week" >
+
+                <TextView
+                    style="@style/DayNames"
+                    android:text="Fri" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/RltvLayout_Week" >
+
+                <TextView
+                    style="@style/DayNames"
+                    android:text="Sat" />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow>
+
+            <RelativeLayout style="@style/RltvLayout_Day" >
+
+                <ImageView style="@style/HorizontalSep" />
+
+                <ImageView style="@style/VerticleSep" />
+
+                <TextView style="@style/Day" />
+
+                <LinearLayout style="@style/PayType" >
+
+                    <ImageView style="@style/PayType_AutoPaid" />
+
+                    <ImageView style="@style/PayType_ManualPaid" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/RltvLayout_Day" >
+
+                <ImageView style="@style/HorizontalSep" />
+
+                <ImageView style="@style/VerticleSep" />
+
+                <TextView style="@style/Day" />
+
+                <LinearLayout style="@style/PayType" >
+
+                    <ImageView style="@style/PayType_AutoPaid" />
+
+                    <ImageView style="@style/PayType_ManualPaid" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/RltvLayout_Day" >
+
+                <ImageView style="@style/HorizontalSep" />
+
+                <ImageView style="@style/VerticleSep" />
+
+                <TextView style="@style/Day" />
+
+                <LinearLayout style="@style/PayType" >
+
+                    <ImageView style="@style/PayType_AutoPaid" />
+
+                    <ImageView style="@style/PayType_ManualPaid" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/RltvLayout_Day" >
+
+                <ImageView style="@style/HorizontalSep" />
+
+                <ImageView style="@style/VerticleSep" />
+
+                <TextView style="@style/Day" />
+
+                <LinearLayout style="@style/PayType" >
+
+                    <ImageView style="@style/PayType_AutoPaid" />
+
+                    <ImageView style="@style/PayType_ManualPaid" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/RltvLayout_Day" >
+
+                <ImageView style="@style/HorizontalSep" />
+
+                <ImageView style="@style/VerticleSep" />
+
+                <TextView style="@style/Day" />
+
+                <LinearLayout style="@style/PayType" >
+
+                    <ImageView style="@style/PayType_AutoPaid" />
+
+                    <ImageView style="@style/PayType_ManualPaid" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/RltvLayout_Day" >
+
+                <ImageView style="@style/HorizontalSep" />
+
+                <ImageView style="@style/VerticleSep" />
+
+                <TextView style="@style/Day" />
+
+                <LinearLayout style="@style/PayType" >
+
+                    <ImageView style="@style/PayType_AutoPaid" />
+
+                    <ImageView style="@style/PayType_ManualPaid" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/RltvLayout_Day" >
+
+                <ImageView style="@style/HorizontalSep" />
+
+                <ImageView style="@style/VerticleSep" />
+
+                <TextView style="@style/Day" />
+
+                <LinearLayout style="@style/PayType" >
+
+                    <ImageView style="@style/PayType_AutoPaid" />
+
+                    <ImageView style="@style/PayType_ManualPaid" />
+                </LinearLayout>
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow>
+
+            <RelativeLayout style="@style/RltvLayout_Day" >
+
+                <ImageView style="@style/HorizontalSep" />
+
+                <ImageView style="@style/VerticleSep" />
+
+                <TextView style="@style/Day" />
+
+                <LinearLayout style="@style/PayType" >
+
+                    <ImageView style="@style/PayType_AutoPaid" />
+
+                    <ImageView style="@style/PayType_ManualPaid" />
+                </LinearLayout>
+
+                <TextView style="@style/Total" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/RltvLayout_Day" >
+
+                <ImageView style="@style/HorizontalSep" />
+
+                <ImageView style="@style/VerticleSep" />
+
+                <TextView style="@style/Day" />
+
+                <LinearLayout style="@style/PayType" >
+
+                    <ImageView style="@style/PayType_AutoPaid" />
+
+                    <ImageView style="@style/PayType_ManualPaid" />
+                </LinearLayout>
+
+                <TextView style="@style/Total" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/RltvLayout_Day" >
+
+                <ImageView style="@style/HorizontalSep" />
+
+                <ImageView style="@style/VerticleSep" />
+
+                <TextView style="@style/Day" />
+
+                <LinearLayout style="@style/PayType" >
+
+                    <ImageView style="@style/PayType_AutoPaid" />
+
+                    <ImageView style="@style/PayType_ManualPaid" />
+                </LinearLayout>
+
+                <TextView style="@style/Total" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/RltvLayout_Day" >
+
+                <ImageView style="@style/HorizontalSep" />
+
+                <ImageView style="@style/VerticleSep" />
+
+                <TextView style="@style/Day" />
+
+                <LinearLayout style="@style/PayType" >
+
+                    <ImageView style="@style/PayType_AutoPaid" />
+
+                    <ImageView style="@style/PayType_ManualPaid" />
+                </LinearLayout>
+
+                <TextView style="@style/Total" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/RltvLayout_Day" >
+
+                <ImageView style="@style/HorizontalSep" />
+
+                <ImageView style="@style/VerticleSep" />
+
+                <TextView style="@style/Day" />
+
+                <LinearLayout style="@style/PayType" >
+
+                    <ImageView style="@style/PayType_AutoPaid" />
+
+                    <ImageView style="@style/PayType_ManualPaid" />
+                </LinearLayout>
+
+                <TextView style="@style/Total" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/RltvLayout_Day" >
+
+                <ImageView style="@style/HorizontalSep" />
+
+                <ImageView style="@style/VerticleSep" />
+
+                <TextView style="@style/Day" />
+
+                <LinearLayout style="@style/PayType" >
+
+                    <ImageView style="@style/PayType_AutoPaid" />
+
+                    <ImageView style="@style/PayType_ManualPaid" />
+                </LinearLayout>
+
+                <TextView style="@style/Total" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/RltvLayout_Day" >
+
+                <ImageView style="@style/HorizontalSep" />
+
+                <ImageView style="@style/VerticleSep" />
+
+                <TextView style="@style/Day" />
+
+                <LinearLayout style="@style/PayType" >
+
+                    <ImageView style="@style/PayType_AutoPaid" />
+
+                    <ImageView style="@style/PayType_ManualPaid" />
+                </LinearLayout>
+
+                <TextView style="@style/Total" />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow>
+
+            <RelativeLayout style="@style/RltvLayout_Day" >
+
+                <ImageView style="@style/HorizontalSep" />
+
+                <ImageView style="@style/VerticleSep" />
+
+                <TextView style="@style/Day" />
+
+                <LinearLayout style="@style/PayType" >
+
+                    <ImageView style="@style/PayType_AutoPaid" />
+
+                    <ImageView style="@style/PayType_ManualPaid" />
+                </LinearLayout>
+
+                <TextView style="@style/Total" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/RltvLayout_Day" >
+
+                <ImageView style="@style/HorizontalSep" />
+
+                <ImageView style="@style/VerticleSep" />
+
+                <TextView style="@style/Day" />
+
+                <LinearLayout style="@style/PayType" >
+
+                    <ImageView style="@style/PayType_AutoPaid" />
+
+                    <ImageView style="@style/PayType_ManualPaid" />
+                </LinearLayout>
+
+                <TextView style="@style/Total" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/RltvLayout_Day" >
+
+                <ImageView style="@style/HorizontalSep" />
+
+                <ImageView style="@style/VerticleSep" />
+
+                <TextView style="@style/Day" />
+
+                <LinearLayout style="@style/PayType" >
+
+                    <ImageView style="@style/PayType_AutoPaid" />
+
+                    <ImageView style="@style/PayType_ManualPaid" />
+                </LinearLayout>
+
+                <TextView style="@style/Total" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/RltvLayout_Day" >
+
+                <ImageView style="@style/HorizontalSep" />
+
+                <ImageView style="@style/VerticleSep" />
+
+                <TextView style="@style/Day" />
+
+                <LinearLayout style="@style/PayType" >
+
+                    <ImageView style="@style/PayType_AutoPaid" />
+
+                    <ImageView style="@style/PayType_ManualPaid" />
+                </LinearLayout>
+
+                <TextView style="@style/Total" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/RltvLayout_Day" >
+
+                <ImageView style="@style/HorizontalSep" />
+
+                <ImageView style="@style/VerticleSep" />
+
+                <TextView style="@style/Day" />
+
+                <LinearLayout style="@style/PayType" >
+
+                    <ImageView style="@style/PayType_AutoPaid" />
+
+                    <ImageView style="@style/PayType_ManualPaid" />
+                </LinearLayout>
+
+                <TextView style="@style/Total" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/RltvLayout_Day" >
+
+                <ImageView style="@style/HorizontalSep" />
+
+                <ImageView style="@style/VerticleSep" />
+
+                <TextView style="@style/Day" />
+
+                <LinearLayout style="@style/PayType" >
+
+                    <ImageView style="@style/PayType_AutoPaid" />
+
+                    <ImageView style="@style/PayType_ManualPaid" />
+                </LinearLayout>
+
+                <TextView style="@style/Total" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/RltvLayout_Day" >
+
+                <ImageView style="@style/HorizontalSep" />
+
+                <ImageView style="@style/VerticleSep" />
+
+                <TextView style="@style/Day" />
+
+                <LinearLayout style="@style/PayType" >
+
+                    <ImageView style="@style/PayType_AutoPaid" />
+
+                    <ImageView style="@style/PayType_ManualPaid" />
+                </LinearLayout>
+
+                <TextView style="@style/Total" />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow>
+
+            <RelativeLayout style="@style/RltvLayout_Day" >
+
+                <ImageView style="@style/HorizontalSep" />
+
+                <ImageView style="@style/VerticleSep" />
+
+                <TextView style="@style/Day" />
+
+                <LinearLayout style="@style/PayType" >
+
+                    <ImageView style="@style/PayType_AutoPaid" />
+
+                    <ImageView style="@style/PayType_ManualPaid" />
+                </LinearLayout>
+
+                <TextView style="@style/Total" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/RltvLayout_Day" >
+
+                <ImageView style="@style/HorizontalSep" />
+
+                <ImageView style="@style/VerticleSep" />
+
+                <TextView style="@style/Day" />
+
+                <LinearLayout style="@style/PayType" >
+
+                    <ImageView style="@style/PayType_AutoPaid" />
+
+                    <ImageView style="@style/PayType_ManualPaid" />
+                </LinearLayout>
+
+                <TextView style="@style/Total" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/RltvLayout_Day" >
+
+                <ImageView style="@style/HorizontalSep" />
+
+                <ImageView style="@style/VerticleSep" />
+
+                <TextView style="@style/Day" />
+
+                <LinearLayout style="@style/PayType" >
+
+                    <ImageView style="@style/PayType_AutoPaid" />
+
+                    <ImageView style="@style/PayType_ManualPaid" />
+                </LinearLayout>
+
+                <TextView style="@style/Total" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/RltvLayout_Day" >
+
+                <ImageView style="@style/HorizontalSep" />
+
+                <ImageView style="@style/VerticleSep" />
+
+                <TextView style="@style/Day" />
+
+                <LinearLayout style="@style/PayType" >
+
+                    <ImageView style="@style/PayType_AutoPaid" />
+
+                    <ImageView style="@style/PayType_ManualPaid" />
+                </LinearLayout>
+
+                <TextView style="@style/Total" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/RltvLayout_Day" >
+
+                <ImageView style="@style/HorizontalSep" />
+
+                <ImageView style="@style/VerticleSep" />
+
+                <TextView style="@style/Day" />
+
+                <LinearLayout style="@style/PayType" >
+
+                    <ImageView style="@style/PayType_AutoPaid" />
+
+                    <ImageView style="@style/PayType_ManualPaid" />
+                </LinearLayout>
+
+                <TextView style="@style/Total" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/RltvLayout_Day" >
+
+                <ImageView style="@style/HorizontalSep" />
+
+                <ImageView style="@style/VerticleSep" />
+
+                <TextView style="@style/Day" />
+
+                <LinearLayout style="@style/PayType" >
+
+                    <ImageView style="@style/PayType_AutoPaid" />
+
+                    <ImageView style="@style/PayType_ManualPaid" />
+                </LinearLayout>
+
+                <TextView style="@style/Total" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/RltvLayout_Day" >
+
+                <ImageView style="@style/HorizontalSep" />
+
+                <ImageView style="@style/VerticleSep" />
+
+                <TextView style="@style/Day" />
+
+                <LinearLayout style="@style/PayType" >
+
+                    <ImageView style="@style/PayType_AutoPaid" />
+
+                    <ImageView style="@style/PayType_ManualPaid" />
+                </LinearLayout>
+
+                <TextView style="@style/Total" />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow>
+
+            <RelativeLayout style="@style/RltvLayout_Day" >
+
+                <ImageView style="@style/HorizontalSep" />
+
+                <ImageView style="@style/VerticleSep" />
+
+                <TextView style="@style/Day" />
+
+                <LinearLayout style="@style/PayType" >
+
+                    <ImageView style="@style/PayType_AutoPaid" />
+
+                    <ImageView style="@style/PayType_ManualPaid" />
+                </LinearLayout>
+
+                <TextView style="@style/Total" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/RltvLayout_Day" >
+
+                <ImageView style="@style/HorizontalSep" />
+
+                <ImageView style="@style/VerticleSep" />
+
+                <TextView style="@style/Day" />
+
+                <LinearLayout style="@style/PayType" >
+
+                    <ImageView style="@style/PayType_AutoPaid" />
+
+                    <ImageView style="@style/PayType_ManualPaid" />
+                </LinearLayout>
+
+                <TextView style="@style/Total" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/RltvLayout_Day" >
+
+                <ImageView style="@style/HorizontalSep" />
+
+                <ImageView style="@style/VerticleSep" />
+
+                <TextView style="@style/Day" />
+
+                <LinearLayout style="@style/PayType" >
+
+                    <ImageView style="@style/PayType_AutoPaid" />
+
+                    <ImageView style="@style/PayType_ManualPaid" />
+                </LinearLayout>
+
+                <TextView style="@style/Total" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/RltvLayout_Day" >
+
+                <ImageView style="@style/HorizontalSep" />
+
+                <ImageView style="@style/VerticleSep" />
+
+                <TextView style="@style/Day" />
+
+                <LinearLayout style="@style/PayType" >
+
+                    <ImageView style="@style/PayType_AutoPaid" />
+
+                    <ImageView style="@style/PayType_ManualPaid" />
+                </LinearLayout>
+
+                <TextView style="@style/Total" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/RltvLayout_Day" >
+
+                <ImageView style="@style/HorizontalSep" />
+
+                <ImageView style="@style/VerticleSep" />
+
+                <TextView style="@style/Day" />
+
+                <LinearLayout style="@style/PayType" >
+
+                    <ImageView style="@style/PayType_AutoPaid" />
+
+                    <ImageView style="@style/PayType_ManualPaid" />
+                </LinearLayout>
+
+                <TextView style="@style/Total" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/RltvLayout_Day" >
+
+                <ImageView style="@style/HorizontalSep" />
+
+                <ImageView style="@style/VerticleSep" />
+
+                <TextView style="@style/Day" />
+
+                <LinearLayout style="@style/PayType" >
+
+                    <ImageView style="@style/PayType_AutoPaid" />
+
+                    <ImageView style="@style/PayType_ManualPaid" />
+                </LinearLayout>
+
+                <TextView style="@style/Total" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/RltvLayout_Day" >
+
+                <ImageView style="@style/HorizontalSep" />
+
+                <ImageView style="@style/VerticleSep" />
+
+                <TextView style="@style/Day" />
+
+                <LinearLayout style="@style/PayType" >
+
+                    <ImageView style="@style/PayType_AutoPaid" />
+
+                    <ImageView style="@style/PayType_ManualPaid" />
+                </LinearLayout>
+
+                <TextView style="@style/Total" />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow>
+
+            <RelativeLayout style="@style/RltvLayout_Day" >
+
+                <ImageView style="@style/HorizontalSep" />
+
+                <ImageView style="@style/VerticleSep" />
+
+                <TextView style="@style/Day" />
+
+                <LinearLayout style="@style/PayType" >
+
+                    <ImageView style="@style/PayType_AutoPaid" />
+
+                    <ImageView style="@style/PayType_ManualPaid" />
+                </LinearLayout>
+
+                <TextView style="@style/Total" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/RltvLayout_Day" >
+
+                <ImageView style="@style/HorizontalSep" />
+
+                <ImageView style="@style/VerticleSep" />
+
+                <TextView style="@style/Day" />
+
+                <LinearLayout style="@style/PayType" >
+
+                    <ImageView style="@style/PayType_AutoPaid" />
+
+                    <ImageView style="@style/PayType_ManualPaid" />
+                </LinearLayout>
+
+                <TextView style="@style/Total" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/RltvLayout_Day" >
+
+                <ImageView style="@style/HorizontalSep" />
+
+                <ImageView style="@style/VerticleSep" />
+
+                <TextView style="@style/Day" />
+
+                <LinearLayout style="@style/PayType" >
+
+                    <ImageView style="@style/PayType_AutoPaid" />
+
+                    <ImageView style="@style/PayType_ManualPaid" />
+                </LinearLayout>
+
+                <TextView style="@style/Total" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/RltvLayout_Day" >
+
+                <ImageView style="@style/HorizontalSep" />
+
+                <ImageView style="@style/VerticleSep" />
+
+                <TextView style="@style/Day" />
+
+                <LinearLayout style="@style/PayType" >
+
+                    <ImageView style="@style/PayType_AutoPaid" />
+
+                    <ImageView style="@style/PayType_ManualPaid" />
+                </LinearLayout>
+
+                <TextView style="@style/Total" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/RltvLayout_Day" >
+
+                <ImageView style="@style/HorizontalSep" />
+
+                <ImageView style="@style/VerticleSep" />
+
+                <TextView style="@style/Day" />
+
+                <LinearLayout style="@style/PayType" >
+
+                    <ImageView style="@style/PayType_AutoPaid" />
+
+                    <ImageView style="@style/PayType_ManualPaid" />
+                </LinearLayout>
+
+                <TextView style="@style/Total" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/RltvLayout_Day" >
+
+                <ImageView style="@style/HorizontalSep" />
+
+                <ImageView style="@style/VerticleSep" />
+
+                <TextView style="@style/Day" />
+
+                <LinearLayout style="@style/PayType" >
+
+                    <ImageView style="@style/PayType_AutoPaid" />
+
+                    <ImageView style="@style/PayType_ManualPaid" />
+                </LinearLayout>
+
+                <TextView style="@style/Total" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/RltvLayout_Day" >
+
+                <ImageView style="@style/HorizontalSep" />
+
+                <ImageView style="@style/VerticleSep" />
+
+                <TextView style="@style/Day" />
+
+                <LinearLayout style="@style/PayType" >
+
+                    <ImageView style="@style/PayType_AutoPaid" />
+
+                    <ImageView style="@style/PayType_ManualPaid" />
+                </LinearLayout>
+
+                <TextView style="@style/Total" />
+            </RelativeLayout>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
